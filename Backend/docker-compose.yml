@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  backend:
+    image: ravi476/django-backend:v05
+    container_name: django-backend
+    ports:
+      - "8000:8000"
+   
+    # Add any other configurations needed for your Django backend
+
+  frontend:
+    image: ravi476/reactfronend:latest
+    container_name: react-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    # Add any other configurations needed for your React frontend
+
+ 

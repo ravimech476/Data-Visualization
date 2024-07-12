@@ -1,0 +1,9 @@
+Django
+django-cors-headers==3.14.0
+djangorestframework==3.14.0
+djangorestframework-jwt
+django-import-export
+pandas
+openpyxl
+psycopg2-binary
+
